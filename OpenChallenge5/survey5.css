@@ -1,0 +1,24 @@
+html, body {
+    height: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    background-color: yellow;
+    height: 20%;
+}
+
+section {
+    background-color: pink;
+    margin: 20px;
+}
+
+footer {
+    background-color: violet;
+    padding: 5px;
+}
