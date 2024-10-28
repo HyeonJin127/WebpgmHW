@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>별 문자 출력하기</title>
+</head>
+<body>
+    <h3>별 문자 출력하기</h3>
+    <hr>
+    <script>
+        let n = prompt("정수를 입력하세요");
+        
+        if (isNaN(parseInt(n)) || n.includes(".") || n <= 0) {
+            document.write("입력 오류 입니다.")
+        }
+        else {
+            n = parseInt(n);
+            for (let i = 0; i < n; i++) {
+                for (let j = 0; j <= i; j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</body>
+</html>
