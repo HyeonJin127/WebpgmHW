@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform:rotate()</title>
+</head>
+<body>
+    <h3>클릭하면 2,3,4배로 옆으로 늘어납니다.</h3>
+    <hr>
+    <img src="../media/1.png" alt="" onclick="scale(this)"
+    width="150">
+    <script>
+        let n = 1;
+
+        function scale(obj) {
+            obj.style.transform = "scale(" + n++ + ", 1)";
+        }
+    </script>
+</body>
+</html>

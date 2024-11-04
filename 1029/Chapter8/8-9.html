@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라면을 끓이는 순서</title>
+</head>
+<body>
+    <h3>라면을 끓이는 순서</h3>
+    <hr>
+    <ol type="A" style="background-color: yellowgreen;"
+    onclick="addList()" id="list">
+        <li>물을 끓인다.</li>
+    </ol>
+    <script>
+        function addList() {
+            let obj = document.getElementById("list");
+            let text = prompt("라면을 끓이는 순서를 입력하라.");
+            let newLI = document.createElement("li");
+            newLI.innerHTML = text;
+            newLI.addEventListener("click",
+                function () {
+                    let p = this.parentElement;
+                    p.removeChild(this);
+                }
+            );
+            obj.appendChild(newLI);
+        }
+    </script>
+</body>
+</html>
