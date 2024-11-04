@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>겜블링 게임</title>
+    <style>
+        table {
+            background-color: antiquewhite;
+            border: 1px violet solid;
+        }
+
+        td {
+            font-family: consolas, sans-serif;
+            font-size: 50px;
+            font-style: italic;
+            text-align: center;
+            color: blue;
+            width: 50px;
+        }
+    </style>
+    <script>
+        let on = true;
+        let gArray = [0, 0, 0];
+
+        function set(e) {
+            if (on == false) return;
+            let n = Math.floor(Math.random() * 3);
+            let obj = e.target;
+            obj.innerHTML = n;
+
+            if (obj.id == "first") {
+                gArray[0] = n;
+            }
+            else if (obj.id == "second") {
+                gArray[1] = n;
+            }
+            else {
+                gArray[2] = n;
+                on = false;
+
+                let result = document.getElementById("result");
+
+                if (gArray[0] == gArray[1] && gArray[1] == gArray[2]) {
+                    result.innerHTML = "Success(click here to do again)";
+                }
+                else {
+                    result.innerHTML = "fail(click here to do again)";
+                }
+            }                
+        }
+        
+        function reset() {
+            gArray = [0, 0 ,0];
+
+            document.getElementById("first").innerHTML = 0;
+            document.getElementById("second").innerHTML = 0;
+            document.getElementById("third").innerHTML = 0;
+            document.getElementById("result").innerHTML = "";
+
+            on = true;
+        }
+    </script>
+
+    <style>
+        #result {
+            color: violet;
+            font: italic bold 15px consolas, sans-serif;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>갬블링 게임</h3>
+    <p>각 숫자를 클릭하면 0에서 2사이의 난수로 바뀝니다. 모두 같은 수가 나오면 승리합니다.</p>
+    <hr>
+    <table>
+        <tr>
+            <td id="first" onclick="set(event)">0</td>
+            <td id="second" onclick="set(event)">0</td>
+            <td id="third" onclick="set(event)">0</td>
+        </tr>
+    </table>
+    <div id="result" onclick="reset()"></div>
+</body>
+</html>
