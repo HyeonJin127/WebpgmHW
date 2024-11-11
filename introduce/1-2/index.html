@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind 와 bulma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold">안녕하세요!</h1>
+            <p class="text-xl">저는 김현진입니다.</p>
+        </header>
+        
+        <div class="tabs is-centered is-medium">
+            <ul>
+                <li>
+                    <a href="#introduce">소개</a>
+                </li>
+                <li>
+                    <a href="#language">사용 가능한 언어</a>
+                </li>
+                <li>
+                    <a href="#contact">연락처</a>
+                </li>
+            </ul>
+        </div>
+
+        <section id="introduce" class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">소개</h2>
+            <p class="text-gray-700">저는 경성대학교 소프트웨어학과를 재학중인 2학년 학생입니다.</p>
+        </section>
+
+        <section id="language" class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">사용 가능한 언어</h2>
+            <div class="flex items-stretch w-200">
+                <div class="font-semibold rounded-xl bg-cyan-400 shadow-md shadow-blue-200 text-white p-8 m-2 w-1/4 text-center">Python</div>
+                <div class="font-semibold rounded-xl bg-cyan-400 shadow-md shadow-blue-200 text-white p-8 m-2 w-1/4 text-center">C</div>
+                <div class="font-semibold rounded-xl bg-cyan-400 shadow-md shadow-blue-200 text-white p-8 m-2 w-1/4 text-center">HTML</div>
+                <div class="font-semibold rounded-xl bg-cyan-400 shadow-md shadow-blue-200 text-white p-8 m-2 w-1/4 text-center">Java</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="title is-4">연락처</h2>
+            <table class="table is-fullwidth is-bordered">
+                <thead>
+                    <tr class="">
+                        <th width="100" class="is-info">SOCIAL</th>
+                        <th width="200" class="is-info">EMAIL</th>
+                        <th width="150" class="is-info">PHONE</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.instagram.com/hyeonjin_1207/">Instagram</a></td>
+                        <td><a href="mailto:guswls041207@outlook.kr">guswls041207@outlook.kr</a></td>
+                        <td><a href="tel:01048746439">010-4874-6439</a></td>
+                    </tr>
+                </tbody>
+            </table>    
+        </section>
+    </div>
+</body>
+</html>

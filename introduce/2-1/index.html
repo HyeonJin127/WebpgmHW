@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 페이지</title>
+</head>
+<body>
+
+<div id="app"></div>
+
+<script>
+    let profile = {
+        name: "김현진",
+        age: 21,
+        hobbies: ["게임", "음악감상", "코딩"],
+        introduction: "안녕하세요. 저는 경성대학교 소프트웨어학과 재학중인 김현진입니다."
+    };
+
+    function createProfile(profile) {
+        let profileDiv = document.createElement('div');
+        profileDiv.classList.add('profile');
+
+        let name = document.createElement('h1');
+        nameElement.textContent = profile.name;
+
+        let age = document.createElement('p');
+        ageElement.textContent = `나이: ${profile.age}세`;
+
+        let hobbies = document.createElement('p');
+        hobbiesElement.textContent = `취미: ${profile.hobbies.join(', ')}`;
+
+        let intro = document.createElement('p');
+        introElement.textContent = profile.introduction;
+
+        profileDiv.appendChild(name);
+        profileDiv.appendChild(age);
+        profileDiv.appendChild(hobbies);
+        profileDiv.appendChild(intro);
+
+        return profileDiv;
+    }
+
+    let app = document.getElementById('app');
+    app.appendChild(createProfile(profile));
+</script>
+
+</body>
+</html>
