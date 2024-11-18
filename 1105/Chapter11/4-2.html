@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사진과 이름 출력</title>
+</head>
+<body>
+    <h3>사진과 이름 출력</h3>
+    <hr>
+    <canvas id="myCanvas" style="background-color: aliceblue;"></canvas>
+    <script>
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+        ctx.font = "Italic 30px forte";
+        ctx.fillStyle = "magenta";
+
+        let img = new Image();
+        img.onload = function () {
+            ctx.drawImage(img, 30, 30, 70, 100);
+            ctx.fillText("김현진", 30, 100);
+            ctx.strokeStyle = "gray";
+            ctx.lineWidth = 1;
+            ctx.strokeText("김현진", 30, 100);
+        }
+        img.src = "../media/me2.jpg";
+
+    </script>
+</body>
+</html>

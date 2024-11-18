@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout()/clearTimeout()</title>
+    <style>
+        #timer {
+            background-color: aliceblue;
+            border: 1px solid gray;
+            width: 6em;
+        }
+    </style>
+    <script>
+        function start() {
+            let timer = document.getElementById("timer");
+            timeout(timer);
+        }
+        function timeout(obj) {
+            let current = new Date();
+            obj.innerHTML = current.toLocaleTimeString();
+            setTimeout("timeout(timer)", 1000);
+        }
+    </script>
+</head>
+<body onload="start()">
+    <h3>div 태그에 시계 만들기</h3>
+    <hr>
+    <div id="timer"></div>
+    </div>
+</body>
+</html>

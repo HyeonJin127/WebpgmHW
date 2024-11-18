@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산수를 풀어 봅시다.</title>
+    <style>
+        td {
+           width: 4em; 
+        }
+    </style>
+    <script>
+        let correct = 0;
+        let question = document.getElementsByClassName("question");
+        let answer = document.getElementsByClassName("answer");
+
+        function startQ() {
+            document.getElementById("score").innerHTML = 0;
+
+            for (let i = 0; i < question.length; i++) {
+                let a = Math.floor(Math.random() * 25);
+                let b = Math.floor(Math.random() * a);
+                let m = Math.floor(Math.random() * 4);
+                let sign = ['+', '-', '*', '/'];
+
+                answer[i].value = "";
+                question[i].innerHTML = a + sign[m] + b;
+                question[i].style.textDecoration = "none";
+            }
+
+            document.getElementById("timer").innerHTML = 10;
+
+            
+        }
+
+        function setTimer(obj) {
+            setTimeout("setTimer(timer)", -100);
+            if(document.getElementById("timer").value <= 0) {
+                clearInterval(document.getElementById("timer").value)
+            }
+        }
+
+        function calc() {
+            for (let i = 0; i < question.length; i++) {
+                if (answer[i].value == "" || isNaN(answer[i].value)){
+                    question[i].style.textDecoration = "line-through";
+                }
+                else if (Math.floor(eval(question[i].innerHTML)) == parseInt(answer[i].value)) {
+                    correct += 1;
+                    question[i].style.textDecoration = "none";
+                }
+                else {
+                    question[i].style.textDecoration = "line-through";
+                }
+            }
+
+            document.getElementById("score").innerHTML = correct;
+        }
+    </script>
+</head>
+<body onload="startQ()">
+    <h3>산수 문제를 풀어 봅시다.</h3>
+    <p>
+        문제는 자동으로 생성되며, 10초가 지나면
+        자동으로 채점됩니다.   
+    </p>
+    <div>남은 시간: <strong id="timer"></strong></div>
+    <hr>
+    <table>
+        <tr>
+            <td class="question"></td>
+            <td><input class="answer" type="text" size="5"></td>
+        </tr>
+        <tr>
+            <td class="question"></td>
+            <td><input class="answer" type="text" size="5"></td>
+        </tr>
+        <tr>
+            <td class="question"></td>
+            <td><input class="answer" type="text" size="5"></td>
+        </tr>
+        <tr>
+            <td class="question"></td>
+            <td><input class="answer" type="text" size="5"></td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" onclick="startQ()" >다시</button>
+            </td>    
+            <td>
+                <div id="score" style="display: inline-block; width: 1.5em"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
