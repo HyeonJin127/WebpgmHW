@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포스트잇</title>
+    <script>
+        function store() {
+            if(!window.localStorage) {
+                alert("로컬 스토리지를 지원하지 않습니다.");
+                return;
+            }
+            let title = document.getElementById("title").value;
+            let content = document.getElementById("content").value;
+
+            localStorage.setItem(title, content);
+        }
+
+        function watch() {
+            window.open("3-2.html", "viewwin");
+        }
+    </script>
+</head>
+<body>
+    <h3>포스트잇</h3>
+    <hr>
+    <form action="">
+        <label>제목 <input type="text" id="title"></label> <br>
+        <label>메모입력<br>
+            <textarea name="" id="content" cols="30" rows="5"></textarea>
+        </label> <br>
+        <input type="button" value="저장" onclick="store()">
+        <input type="button" value="보기" onclick="watch()">
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일기 쓰기</title>
+    <script>
+        function store() {
+            if(!window.localStorage) {
+                alert("로컬 스토리지를 지원하지 않습니다.");
+                return;
+            }
+            
+            let date = new Date().toLocaleDateString();
+
+            let content = document.getElementById("content").value;
+
+            localStorage.setItem(date, content);
+        }
+
+        function watch() {
+            window.open("4-2.html", "viewwin");
+        }
+    </script>
+</head>
+<body>
+    <h3>일기쓰기</h3>
+    <hr>
+    <form action="">
+        <div id="date">
+            <script>
+                document.write("오늘 " + new Date().toLocaleDateString());
+            </script>
+        </div>
+        <label>메모입력<br>
+            <textarea name="" id="content" cols="30" rows="5"></textarea>
+        </label> <br>
+        <input type="button" value="저장" onclick="store()">
+        <input type="button" value="보기" onclick="watch()">
+    </form>
+</body>
+</html>
