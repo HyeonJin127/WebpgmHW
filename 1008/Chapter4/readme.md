@@ -3,7 +3,7 @@
 - 1번
   - [▶️ 1](practice4-1.html)
   
-- 4번
+- 2번
   - [▶️ 2](practice4-2.html)
  
 - 3번
