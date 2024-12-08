@@ -1,110 +1,79 @@
-# 웹프로그래밍 과제
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>웹프로그래밍 과제</h1>
 
-### HTML5 + CSS3 + Javascript 웹 프로그래밍
-
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
-
----
-
-<details>
-  <summary>
-    실습 문제
-  </summary>
-
-  ##### 0924
-  [▶️Chapter 2](0924/Chapter2/)
-
-  [▶️Chapter 3](0924/Chapter3/)
-
-  ##### 1008
-  [▶️Chapter 4](1008/Chapter4/)
+  <h3>HTML5 + CSS3 + Javascript 웹 프로그래밍</h3>
   
-  [▶️Chapter 5](1008/Chapter5/)
+  <hr>
 
-  ##### 1015
-  [▶️Chapter 6](1015/Chapter6/)
-  
-  [▶️Chapter 7](1015/Chapter7/)
+  <details>
+      <summary>실습 문제</summary>
 
-  ##### 1029
-  [▶️Chapter 8](1029/Chapter8/)
-  
-  [▶️Chapter 9](1029/Chapter9/)
+  <h5>0924</h5>
+  <a href="0924/Chapter2/">▶️Chapter 2</a><br>
+  <a href="0924/Chapter3/">▶️Chapter 3</a><br>
 
-  ##### 1105
-  [▶️Chapter 10](1105/Chapter10/)
-  
-  [▶️Chapter 11](1105/Chapter11/)
+  <h5>1008</h5>
+  <a href="1008/Chapter4/">▶️Chapter 4</a><br>
+  <a href="1008/Chapter5/">▶️Chapter 5</a><br>
 
-  ##### 1119
-  [▶️Chapter 12](1119/Chap12/)
-  
-  [▶️Chapter 13](1119/Chap13/)
-  
-</details>
+  <h5>1015</h5>
+  <a href="1015/Chapter6/">▶️Chapter 6</a><br>
+  <a href="1015/Chapter7/">▶️Chapter 7</a><br>
 
+  <h5>1029</h5>
+  <a href="1029/Chapter8/">▶️Chapter 8</a><br>
+  <a href="1029/Chapter9/">▶️Chapter 9</a><br>
 
+  <h5>1105</h5>
+  <a href="1105/Chapter10/">▶️Chapter 10</a><br>
+  <a href="1105/Chapter11/">▶️Chapter 11</a><br>
 
-<details>
-  <summary>
-    Open Challenge
-  </summary>
+  <h5>1119</h5>
+  <a href="1119/Chap12/">▶️Chapter 12</a><br>
+  <a href="1119/Chap13/">▶️Chapter 13</a><br>
+  </details>
 
-  ##### 오픈챌린지
-  
-  [▶️Open Challenge 1](OpenChallenge1/) 
-  
-  [▶️Open Challenge 2](OpenChallenge2/) 
-  
-  [▶️Open Challenge 3](OpenChallenge3/) 
-  
-  [▶️Open Challenge 4](OpenChallenge4/) 
-  
-  [▶️Open Challenge 5](OpenChallenge5/) 
-  
-  [▶️Open Challenge 6](OpenChallenge6/) 
-  
-  [▶️Open Challenge 7](OpenChallenge7/) 
-  
-  [▶️Open Challenge 8](OpenChallenge8/) 
-  
-  [▶️Open Challenge 9](OpenChallenge9/) 
-  
-  [▶️Open Challenge 10](OpenChallenge10/) 
-  
-  [▶️Open Challenge 11](OpenChallenge11/) 
-  
-  [▶️Open Challenge 12](OpenChallenge12/) 
-  
-  [▶️Open Challenge 13](OpenChallenge13/) 
-  
-</details>
+  <details>
+      <summary>Open Challenge</summary>
 
+  <h5>오픈챌린지</h5>
+  <a href="OpenChallenge1/">▶️Open Challenge 1</a><br>
+  <a href="OpenChallenge2/">▶️Open Challenge 2</a><br>
+  <a href="OpenChallenge3/">▶️Open Challenge 3</a><br>
+  <a href="OpenChallenge4/">▶️Open Challenge 4</a><br>
+  <a href="OpenChallenge5/">▶️Open Challenge 5</a><br>
+  <a href="OpenChallenge6/">▶️Open Challenge 6</a><br>
+  <a href="OpenChallenge7/">▶️Open Challenge 7</a><br>
+  <a href="OpenChallenge8/">▶️Open Challenge 8</a><br>
+  <a href="OpenChallenge9/">▶️Open Challenge 9</a><br>
+  <a href="OpenChallenge10/">▶️Open Challenge 10</a><br>
+  <a href="OpenChallenge11/">▶️Open Challenge 11</a><br>
+  <a href="OpenChallenge12/">▶️Open Challenge 12</a><br>
+  <a href="OpenChallenge13/">▶️Open Challenge 13</a><br>
+  </details>
 
+  <details>
+      <summary>추가 과제</summary>
 
-<details>
-  <summary>
-    추가 과제
-  </summary>
+  <h5>자기소개</h5>
+  <a href="1008/introduce/">▶️자기소개 1</a><br>
+  <a href="1008/sourcecode/">▶️자기소개 2</a><br>
+  <a href="introduce/">▶️자기소개 3 (with CSS Framework)</a><br>
 
-  ##### 자기소개
+  <h5>node.js</h5>
+  <a href="About%20node%20js/">▶️Node.js</a><br>
 
-  [▶️자기소개 1](1008/introduce/)
+  <h5>jquery + 예제</h5>
+  <a href="1119HW/">▶️jquery 14개 + 예제 22파일</a><br>
+  </details>
 
-  [▶️자기소개 2](1008/sourcecode/)
-
-  [▶️자기소개 3 (with CSS Framework)](introduce/)
-
-  ##### node.js
-
-  [▶️Node.js](About%20node%20js/)
-  
-  ##### jquery + 예제
-
-  [▶️jquery 14개 + 예제 22파일](1119HW/) 
-  
-</details>
-
----
+  <hr>
+</body>
+</html>
