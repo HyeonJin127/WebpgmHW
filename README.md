@@ -72,14 +72,14 @@
 
 ### ➕ 추가 과제
 - 자기소개
-  - [▶️자기소개 1](1008/introduce/)
-  - [▶️자기소개 2](1008/sourcecode/)
+  - [▶️자기소개 1](1008/introduce/profile.html)
+  - [▶️자기소개 2](1008/sourcecode/index.html)
   - [▶️자기소개 3 (with CSS Framework)](introduce/)
     
 - node.js
   - [▶️Node.js](About%20node%20js/)
   
 - jquery + 예제
-  - [▶️jquery 14개 + 예제 22파일](1119HW/)
+  - [▶️jquery 14개 + 예제 22파일](1119HW/index.html)
 
 ---
