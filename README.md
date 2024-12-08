@@ -8,7 +8,7 @@
 
 ---
 
-### 실습 문제
+### 📖 실습 문제 
 - 0924
   - [▶️Chapter 2](0924/Chapter2/)
 
@@ -41,7 +41,7 @@
  
 ---
 
-### Open Challenge
+### 💯 Open Challenge
 - [▶️Open Challenge 1](OpenChallenge1/) 
   
 - [▶️Open Challenge 2](OpenChallenge2/) 
@@ -70,7 +70,7 @@
 
 ---
 
-### 추가 과제
+### ➕ 추가 과제
 - 자기소개
   - [▶️자기소개 1](1008/introduce/)
   - [▶️자기소개 2](1008/sourcecode/)
